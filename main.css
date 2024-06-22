@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+ES+Deco:wght@100..400&display=swap');
+
+    /* 
+
+    font-family: "Playwrite ES Deco", cursive;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal; 
+
+    */
+
+:root {
+    --main-bg-color: #66e7f8;
+    --main-theme-color: #fdd626;
+    --scrollbar-thumb-color: #000;
+    --header_height: 50px;
+}
+
+*{
+    margin: 0;
+}
+
+body{
+    background-color: var(--main-bg-color);
+}
+
+body::-webkit-scrollbar {
+    width: 6px;
+}
+  body::-webkit-scrollbar-track {
+    background: var(--main-bg-color);
+}
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-thumb-color);
+    border-radius: 20px;
+}
+
+header {
+    background-color: #00000038;
+    display: flex;
+    justify-content: space-between;
+    height: var(--header_height);
+    position: fixed;
+    top: 0;
+    font-size: 26px;
+    font-style: oblique;
+    font-family: "Playwrite ES Deco", cursive; 
+    font-weight: 400;
+    width: calc(100vw - 6px);
+
+    border: 1px solid #000;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.logo img {
+    height: 100%;
+}
+
+.header_menu{
+    display: flex;
+}
+
+.header_menu_items{
+    width: max-content;
+    gap: 20px;
+}
+
+.main_page_with_gif{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('assets/putin.gif');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.gif_body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.gif_body img{
+    background: none;
+    margin: 0 auto;
+    margin-top: 5%;
+    height: 45vh;
+}
+
+.gif_body label{
+    margin: 0 auto;
+    margin-top: 1%;
+    font-size: 56px;
+    font-style: oblique;
+    font-family: "Playwrite ES Deco", cursive; 
+    font-weight: 400;
+    color: azure;
+}
+
+.buy_but{
+    margin: 0 auto;
+    margin-top: 4%;
+    text-decoration: none;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+
+    font-size: 26px;
+    font-style: oblique;
+    font-family: "Playwrite ES Deco", cursive; 
+    font-weight: 400;
+    width: 220px;
+    background-color: var(--main-theme-color);
+    border-radius: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.sec_main_page, .sec_main_page{
+    height: 100vh;
+}
+
+.sec_main_page label{
+    font-size: 56px;
+    font-style: oblique;
+    font-family: "Playwrite ES Deco", cursive; 
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    display: block;
+    width: max-content;
+    margin: 0  auto;
+    margin-top: 20%;
+}
+
+.third_main_page label{
+    font-size: 56px;
+    font-style: oblique;
+    font-family: "Playwrite ES Deco", cursive; 
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    display: block;
+    width: max-content;
+    margin: 0  auto;
+    margin-top: 20%;
+}
